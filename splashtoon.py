@@ -257,9 +257,9 @@ def game_engine(timeout,players):
   for x in range(320):
     for y in range(197):
       pixel = get_pixel(x,y+25)  
-      if pixel == (248, 100, 96):
+      if pixel == (248, 100, 96) or pixel == (255,101,99):
         score[0] += 1
-      elif pixel == (96, 248, 96):
+      elif pixel == (96, 248, 96) or pixel == (99,251,99):
         score[1] += 1
     draw_string("Calcul en cours...           "+str(int(100*x/320))+"%",0,0)
   reset_screen()
